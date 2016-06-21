@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="LWP&gt;&gt;Chennai-demolab">308ceee30fb3924042f54e9ce1050e3e</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="sys_user">emailLIKEliveworkspace.com^manager.emailLIKEwipro.com^EQ<item endquery="false" field="email" goto="false" newquery="false" operator="LIKE" or="false" value="liveworkspace.com"/>
+            <item endquery="false" field="manager.email" goto="false" newquery="false" operator="LIKE" or="false" value="wipro.com"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Manage onboarded users</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sys_user</name>
+        <order>400</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-21 13:23:35</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f9009c170fcca64042f54e9ce1050e3f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Manage onboarded users</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="LWP-Chennai-Demo" source="x_19022_lwp_cdemo">363f64130fbb524042f54e9ce1050e73</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="LWP-Chennai-Demo">363f64130fbb524042f54e9ce1050e73</sys_scope>
+        <sys_update_name>sys_app_module_f9009c170fcca64042f54e9ce1050e3f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-21 13:27:50</sys_updated_on>
+        <timeline_page/>
+        <title>Manage onboarded users</title>
+        <uncancelable>false</uncancelable>
+        <view_name>Onboarded users</view_name>
+        <window_name/>
+    </sys_app_module>
+</record_update>

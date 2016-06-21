@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Request demo access" max_length="40" name="x_19022_lwp_cdemo_request_demo_access" type="collection">
+        <element choice="3" default="True" label="Active" max_length="40" name="active" type="boolean">
+            <choice/>
+        </element>
+        <element choice="1" label="Customer BU" max_length="4000" name="customer_bu" type="choice">
+            <choice>
+                <element label="BFSI" sequence="0" value="3"/>
+                <element label="ENU" sequence="1" value="1"/>
+                <element label="GMT" sequence="2" value="6"/>
+                <element label="HLS" sequence="3" value="4"/>
+                <element label="MFG" sequence="4" value="5"/>
+                <element label="RCTG" sequence="5" value="2"/>
+            </choice>
+        </element>
+        <element label="Customer Name" max_length="40" name="customer_name" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#9;&#9;var disp=&quot;&quot;;&#13;&#10;&#9;&#9;if(current.reason==1){&#13;&#10;&#9;&#9;&#9;//request has been for training&#13;&#10;&#9;&#9;&#9;disp=current.requestor.user_name&#13;&#10;&#9;&#9;&#9;+'--Training';&#13;&#10;&#9;&#9;}&#13;&#10;&#9;&#9;else{&#9;&#9;&#13;&#10;&#9;&#9;&#9;if(current.reason==3){&#13;&#10;&#9;&#9;&#9;&#9;disp=current.customer_name+&quot;--Customer presentation&quot;;&#9;&#13;&#10;&#9;&#9;&#9;}&#13;&#10;&#9;&#9;&#9;else{&#13;&#10;&#9;&#9;&#9;&#9;disp=current.customer_name+&quot;--Customer presentation dry run&quot;;&#13;&#10;&#9;&#9;&#9;}&#13;&#10;&#9;&#9;&#9;&#13;&#10;&#9;&#9;}&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return disp;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" display="true" label="DisplayName" max_length="40" name="displayname" read_only="true" type="string" virtual="true"/>
+        <element label="End date" max_length="40" name="end_date" type="glide_date"/>
+        <element attributes="field_list_selector" choice="3" default="1" label="Reason" mandatory="true" max_length="40" name="reason" type="choice">
+            <choice>
+                <element label="Customer presentation" sequence="0" value="3"/>
+                <element label="Customer presentation - Dry run" sequence="1" value="2"/>
+                <element label="Training" sequence="2" value="1"/>
+            </choice>
+        </element>
+        <element label="Requestor" max_length="32" name="requestor" reference="sys_user" type="reference"/>
+        <element label="Start date" max_length="40" name="start_date" type="glide_date"/>
+        <index name="index">
+            <element name="requestor"/>
+        </index>
+    </element>
+</database>
