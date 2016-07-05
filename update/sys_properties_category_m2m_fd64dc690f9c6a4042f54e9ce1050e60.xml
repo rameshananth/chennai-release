@@ -3,7 +3,7 @@
     <sys_properties_category_m2m action="INSERT_OR_UPDATE">
         <category display_value="Chennai-Demo-lab-AD-properties">0ff3dc690f9c6a4042f54e9ce1050e48</category>
         <order>100</order>
-        <property display_value="x_19022_lwp_cdemo.adserver" name="x_19022_lwp_cdemo.adserver">939d80e50f9c6a4042f54e9ce1050e00</property>
+        <property display_value="">939d80e50f9c6a4042f54e9ce1050e00</property>
         <sys_class_name>sys_properties_category_m2m</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-06-28 13:27:16</sys_created_on>

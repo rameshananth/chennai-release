@@ -33,8 +33,8 @@
         <sys_created_on>2016-06-21 15:16:20</sys_created_on>
         <sys_id>833a289f0fcca64042f54e9ce1050e48</sys_id>
         <sys_mod_count>4</sys_mod_count>
-        <sys_updated_by>ramesh.krishnan1@wipro.com</sys_updated_by>
-        <sys_updated_on>2016-06-21 15:19:36</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2016-07-05 05:29:48</sys_updated_on>
         <table>sys_user</table>
         <timezone/>
         <validated>true</validated>
@@ -327,14 +327,14 @@ inc.update();</value>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Create personal fileshare">67d7f0220fd3160042f54e9ce1050eb6</activity_definition>
-        <activity_definition_updated>false</activity_definition_updated>
+        <activity_definition_updated>true</activity_definition_updated>
         <databus_lookup_id>5</databus_lookup_id>
         <height/>
         <input>{"Hostname":"LWITSTORE","FolderName":"${current.user_name}","ShareName":"MY_${current.user_name}","domain":"Liveworkspace","userName":"${current.user_name}"}</input>
         <is_parent>false</is_parent>
         <name>Create user fileshare on server</name>
         <new_activity_definition/>
-        <notes/>
+        <notes>This activity was updated to a newer version since the workflow was published.</notes>
         <out_of_date>false</out_of_date>
         <parent/>
         <pinned>false</pinned>

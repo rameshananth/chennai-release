@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Demoadmins" max_length="40" name="x_19022_lwp_cdemo_demoadmins" type="collection">
-        <element label="Demo user" max_length="32" name="demo_user" reference="sys_user" type="reference"/>
+        <element label="demo_user" max_length="32" name="demo_user" reference="sys_user" type="reference"/>
         <index name="index">
             <element name="demo_user"/>
         </index>

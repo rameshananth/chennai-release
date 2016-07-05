@@ -32,12 +32,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-06-27 17:41:22</sys_created_on>
         <sys_id>0af40c1d0f186a4042f54e9ce1050ef9</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-06-27 17:57:45</sys_updated_on>
+        <sys_updated_on>2016-07-04 08:11:33</sys_updated_on>
         <table>sc_cat_item</table>
         <timezone/>
-        <validated>false</validated>
+        <validated>true</validated>
         <workflow display_value="LWP-C-Provision-Software">d47fe9450f546a4042f54e9ce1050ecb</workflow>
     </wf_workflow_version>
     <wf_workflow action="INSERT_OR_UPDATE">

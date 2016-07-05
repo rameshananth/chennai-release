@@ -6,37 +6,18 @@
             <element>customer_bu</element>
             <hint/>
             <inactive>false</inactive>
-            <label>BFSI</label>
-            <language>en</language>
-            <name>x_19022_lwp_cdemo_request_demo_access</name>
-            <sequence>0</sequence>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2016-06-20 12:15:16</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>2f277a760fc4a64042f54e9ce1050e2e</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2016-06-20 12:21:58</sys_updated_on>
-            <value>3</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>customer_bu</element>
-            <hint/>
-            <inactive>false</inactive>
             <label>ENU</label>
             <language>en</language>
             <name>x_19022_lwp_cdemo_request_demo_access</name>
-            <sequence>1</sequence>
+            <sequence/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2016-06-20 12:14:58</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>ef17b6760fc4a64042f54e9ce1050e7e</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2016-06-20 12:21:58</sys_updated_on>
+            <sys_updated_on>2016-06-20 12:15:03</sys_updated_on>
             <value>1</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -44,19 +25,38 @@
             <element>customer_bu</element>
             <hint/>
             <inactive>false</inactive>
-            <label>GMT</label>
+            <label>RCTG</label>
             <language>en</language>
             <name>x_19022_lwp_cdemo_request_demo_access</name>
-            <sequence>2</sequence>
+            <sequence/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2016-06-20 12:15:50</sys_created_on>
+            <sys_created_on>2016-06-20 12:15:09</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>454732b60fc4a64042f54e9ce1050e02</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_id>bc277e760fc4a64042f54e9ce1050ee8</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2016-06-20 12:21:58</sys_updated_on>
-            <value>6</value>
+            <sys_updated_on>2016-06-20 12:15:14</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>customer_bu</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BFSI</label>
+            <language>en</language>
+            <name>x_19022_lwp_cdemo_request_demo_access</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-06-20 12:15:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2f277a760fc4a64042f54e9ce1050e2e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-06-20 12:15:20</sys_updated_on>
+            <value>3</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -66,15 +66,15 @@
             <label>HLS</label>
             <language>en</language>
             <name>x_19022_lwp_cdemo_request_demo_access</name>
-            <sequence>3</sequence>
+            <sequence/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2016-06-20 12:15:24</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>1d377ef20fc4a64042f54e9ce1050ebc</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2016-06-20 12:21:58</sys_updated_on>
+            <sys_updated_on>2016-06-20 12:15:27</sys_updated_on>
             <value>4</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -85,15 +85,15 @@
             <label>MFG</label>
             <language>en</language>
             <name>x_19022_lwp_cdemo_request_demo_access</name>
-            <sequence>4</sequence>
+            <sequence/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2016-06-20 12:15:32</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>4f377a760fc4a64042f54e9ce1050e30</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2016-06-20 12:21:58</sys_updated_on>
+            <sys_updated_on>2016-06-20 12:15:35</sys_updated_on>
             <value>5</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -101,19 +101,19 @@
             <element>customer_bu</element>
             <hint/>
             <inactive>false</inactive>
-            <label>RCTG</label>
+            <label>GMT</label>
             <language>en</language>
             <name>x_19022_lwp_cdemo_request_demo_access</name>
-            <sequence>5</sequence>
+            <sequence/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2016-06-20 12:15:09</sys_created_on>
+            <sys_created_on>2016-06-20 12:15:50</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>bc277e760fc4a64042f54e9ce1050ee8</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_id>454732b60fc4a64042f54e9ce1050e02</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2016-06-20 12:21:58</sys_updated_on>
-            <value>2</value>
+            <sys_updated_on>2016-06-20 12:15:54</sys_updated_on>
+            <value>6</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>customer_bu</element>
@@ -122,8 +122,8 @@
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2016-06-20 12:14:58</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>34277a360fc4a64042f54e9ce1050e23</sys_id>
-            <sys_mod_count>12</sys_mod_count>
+            <sys_id>a7e3061f0fd8e200bd77f37ce1050e52</sys_id>
+            <sys_mod_count>11</sys_mod_count>
             <sys_name>customer_bu</sys_name>
             <sys_package display_value="LWP-Chennai-Demo" source="x_19022_lwp_cdemo">363f64130fbb524042f54e9ce1050e73</sys_package>
             <sys_policy/>
@@ -131,7 +131,7 @@
             <sys_scope display_value="LWP-Chennai-Demo">363f64130fbb524042f54e9ce1050e73</sys_scope>
             <sys_update_name>sys_choice_x_19022_lwp_cdemo_request_demo_access_customer_bu</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2016-06-20 12:15:54</sys_updated_on>
+            <sys_updated_on>2016-06-20 12:15:50</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>
