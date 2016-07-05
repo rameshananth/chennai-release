@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"activities":{},"subflows":[],"stages":{},"ends":["c14ad4580f142a4042f54e9ce1050ef7"]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition table="x_19022_lwp_cdemo_offboard_user">status=1^EQ<item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>894ad4580f142a4042f54e9ce1050ef3,cd4ad4580f142a4042f54e9ce1050ef7,494ad4580f142a4042f54e9ce1050ef5,014ad4580f142a4042f54e9ce1050ef4,894ad4580f142a4042f54e9ce1050ef6|894ad4580f142a4042f54e9ce1050ef3,cd4ad4580f142a4042f54e9ce1050ef7,494ad4580f142a4042f54e9ce1050ef5,014ad4580f142a4042f54e9ce1050ef4,094ad4580f142a4042f54e9ce1050ef8</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>894ad4580f142a4042f54e9ce1050ef3,cd4ad4580f142a4042f54e9ce1050ef7,494ad4580f142a4042f54e9ce1050ef5,014ad4580f142a4042f54e9ce1050ef5,c54ad4580f142a4042f54e9ce1050ef7,094ad4580f142a4042f54e9ce1050ef4,c14ad4580f142a4042f54e9ce1050ef7|894ad4580f142a4042f54e9ce1050ef3,cd4ad4580f142a4042f54e9ce1050ef7,494ad4580f142a4042f54e9ce1050ef5,014ad4580f142a4042f54e9ce1050ef5,c54ad4580f142a4042f54e9ce1050ef7,c14ad4580f142a4042f54e9ce1050ef7|894ad4580f142a4042f54e9ce1050ef3,cd4ad4580f142a4042f54e9ce1050ef7,494ad4580f142a4042f54e9ce1050ef5,014ad4580f142a4042f54e9ce1050ef4,894ad4580f142a4042f54e9ce1050ef6|894ad4580f142a4042f54e9ce1050ef3,cd4ad4580f142a4042f54e9ce1050ef7,494ad4580f142a4042f54e9ce1050ef5,014ad4580f142a4042f54e9ce1050ef4,094ad4580f142a4042f54e9ce1050ef8</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>LWP-C-Offboard user</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">894ad4580f142a4042f54e9ce1050ef3</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>414ad4580f142a4042f54e9ce1050ef3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:45:12</sys_updated_on>
+        <table>x_19022_lwp_cdemo_offboard_user</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="LWP-C-Offboard user">11cd61880f102a4042f54e9ce1050e16</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>LWP-C-Offboard user</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 04:06:50</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>11cd61880f102a4042f54e9ce1050e16</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>LWP-C-Offboard user</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="LWP-Chennai-Demo" source="x_19022_lwp_cdemo">363f64130fbb524042f54e9ce1050e73</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="LWP-Chennai-Demo">363f64130fbb524042f54e9ce1050e73</sys_scope>
+        <sys_update_name>wf_workflow_11cd61880f102a4042f54e9ce1050e16</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 04:07:13</sys_updated_on>
+        <table>x_19022_lwp_cdemo_offboard_user</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>894ad4580f142a4042f54e9ce1050ef3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="LWP-C-Offboard user">414ad4580f142a4042f54e9ce1050ef3</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">894ad4580f142a4042f54e9ce1050ef3</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>4d4ad4580f142a4042f54e9ce1050ef3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Check if we need to remove group</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>494ad4580f142a4042f54e9ce1050ef5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="LWP-C-Offboard user">414ad4580f142a4042f54e9ce1050ef3</workflow_version>
+        <x>240</x>
+        <y>206</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>494ad4580f142a4042f54e9ce1050ef5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>c94ad4580f142a4042f54e9ce1050ef5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>494ad4580f142a4042f54e9ce1050ef5</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>8d4ad4580f142a4042f54e9ce1050ef5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>494ad4580f142a4042f54e9ce1050ef5</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>414ad4580f142a4042f54e9ce1050ef6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+&#13;
+if(workflow.scratchpad.softwarecounter==workflow.scratchpad.groupList.length){&#13;
+	answer='no';&#13;
+}&#13;
+else{&#13;
+	answer='yes';&#13;
+}&#13;
+	&#13;
+	&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Check if we need to remove group">494ad4580f142a4042f54e9ce1050ef5</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>454ad4580f142a4042f54e9ce1050ef6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Check if we need to remove group">494ad4580f142a4042f54e9ce1050ef5</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>c54ad4580f142a4042f54e9ce1050ef6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>c14ad4580f142a4042f54e9ce1050ef7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="LWP-C-Offboard user">414ad4580f142a4042f54e9ce1050ef3</workflow_version>
+        <x>642</x>
+        <y>659</y>
+    </wf_activity>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Increase software counter</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>094ad4580f142a4042f54e9ce1050ef8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="LWP-C-Offboard user">414ad4580f142a4042f54e9ce1050ef3</workflow_version>
+        <x>714</x>
+        <y>281</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>094ad4580f142a4042f54e9ce1050ef8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>894ad4580f142a4042f54e9ce1050ef8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <value>workflow.scratchpad.softwarecounter+=1;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Increase software counter">094ad4580f142a4042f54e9ce1050ef8</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>8d4ad4580f142a4042f54e9ce1050ef8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Disable Mailbox">47d1871ec342020029b78039dfba8f99</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{"hostname":"LWEXCH01","domain":"Liveworkspace.com","user":"${workflow.scratchpad.userName}","parameters":""}</input>
+        <is_parent>false</is_parent>
+        <name>Offboard mailbox</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>c54ad4580f142a4042f54e9ce1050ef7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="LWP-C-Offboard user">414ad4580f142a4042f54e9ce1050ef3</workflow_version>
+        <x>487</x>
+        <y>458</y>
+    </wf_activity>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Offboard mailbox">c54ad4580f142a4042f54e9ce1050ef7</activity>
+        <condition/>
+        <condition_default display_value="Failure">8bd1871ec342020029b78039dfba8f99</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Failure</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>0d4ad4580f142a4042f54e9ce1050ef7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Offboard mailbox">c54ad4580f142a4042f54e9ce1050ef7</activity>
+        <condition>activityOutput.result == "success"</condition>
+        <condition_default display_value="Success">4bd1871ec342020029b78039dfba8f99</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>894ad4580f142a4042f54e9ce1050ef7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Provision hardware</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>014ad4580f142a4042f54e9ce1050ef5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="LWP-C-Offboard user">414ad4580f142a4042f54e9ce1050ef3</workflow_version>
+        <x>302</x>
+        <y>376</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>014ad4580f142a4042f54e9ce1050ef5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>814ad4580f142a4042f54e9ce1050ef5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <value>function raiseIncident(sDescription){&#13;
+	var inc=new GlideRecord('incident');&#13;
+	inc.initialize();&#13;
+	inc.short_description="Problem with offboarding user"+&#13;
+		workflow.scratchpad.userName+" "+&#13;
+		sDescription;&#13;
+	inc.update();	&#13;
+}&#13;
+&#13;
+var assets=new GlideRecord('alm_hardware');&#13;
+//assets.addQuery('model',req_model);&#13;
+assets.addQuery('assigned_to',workflow.scratchpad.userID); &#13;
+assets.addOrCondition('reserved_for',workflow.scratchpad.userID);//In stock is 6&#13;
+assets.query();&#13;
+//assets.next();&#13;
+if(assets.getRowCount()==0){&#13;
+	gs.addInfoMessage("User does not have any hardware");&#13;
+}&#13;
+else{&#13;
+	while(assets.next()){&#13;
+		assets.install_status=6; //to be moved back to stock&#13;
+		assets.update();&#13;
+	}	&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Provision hardware">014ad4580f142a4042f54e9ce1050ef5</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>854ad4580f142a4042f54e9ce1050ef5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Raise an error</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>894ad4580f142a4042f54e9ce1050ef6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="LWP-C-Offboard user">414ad4580f142a4042f54e9ce1050ef3</workflow_version>
+        <x>787</x>
+        <y>357</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>894ad4580f142a4042f54e9ce1050ef6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>0d4ad4580f142a4042f54e9ce1050ef6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <value>function raiseIncident(sDescription){&#13;
+	var inc=new GlideRecord('incident');&#13;
+	inc.initialize();&#13;
+	inc.short_description="Unable to offboard user "+sDescription;&#13;
+	inc.update();	&#13;
+}&#13;
+&#13;
+raiseIncident(workflow.scratchpad.userName);</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Raise an error">894ad4580f142a4042f54e9ce1050ef6</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>014ad4580f142a4042f54e9ce1050ef7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Remove AD Object">016b49307f010200b547b8038dfa91e5</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>10</databus_lookup_id>
+        <height/>
+        <input>{"DomainController":"172.16.1.6","ObjectName":"${workflow.scratchpad.userName}","Type":"User"}</input>
+        <is_parent>false</is_parent>
+        <name>Remove user from AD</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>094ad4580f142a4042f54e9ce1050ef4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="LWP-C-Offboard user">414ad4580f142a4042f54e9ce1050ef3</workflow_version>
+        <x>841</x>
+        <y>475</y>
+    </wf_activity>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Remove user from AD">094ad4580f142a4042f54e9ce1050ef4</activity>
+        <condition/>
+        <condition_default display_value="Failure">581c89307f010200b547b8038dfa91de</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Failure</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>c94ad4580f142a4042f54e9ce1050ef4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Remove user from AD">094ad4580f142a4042f54e9ce1050ef4</activity>
+        <condition>activityOutput.result == "success"</condition>
+        <condition_default display_value="Success">f7fb89307f010200b547b8038dfa91dc</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>4d4ad4580f142a4042f54e9ce1050ef4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Remove User from Group">f2a73a312f3412001144839fb18c95f4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{"domain_controller":"172.16.1.6","user_name":"${workflow.scratchpad.user_name}","group_name":"${workflow.scratchpad.groupList[workflow.scratchpad.softwarecounter]}"}</input>
+        <is_parent>false</is_parent>
+        <name>Remove user from group</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>014ad4580f142a4042f54e9ce1050ef4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="LWP-C-Offboard user">414ad4580f142a4042f54e9ce1050ef3</workflow_version>
+        <x>483</x>
+        <y>272</y>
+    </wf_activity>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Remove user from group">014ad4580f142a4042f54e9ce1050ef4</activity>
+        <condition/>
+        <condition_default display_value="Failure">f6a73a312f3412001144839fb18c95f4</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Failure</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>c14ad4580f142a4042f54e9ce1050ef4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Remove user from group">014ad4580f142a4042f54e9ce1050ef4</activity>
+        <condition>activityOutput.result == null</condition>
+        <condition_default display_value="Success">3aa73a312f3412001144839fb18c95f4</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>454ad4580f142a4042f54e9ce1050ef4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set all workflow values for removing from software groups</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>cd4ad4580f142a4042f54e9ce1050ef7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:45:05</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="LWP-C-Offboard user">414ad4580f142a4042f54e9ce1050ef3</workflow_version>
+        <x>164</x>
+        <y>63</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cd4ad4580f142a4042f54e9ce1050ef7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>414ad4580f142a4042f54e9ce1050ef8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:45:05</sys_updated_on>
+        <value>gs.addInfoMessage(current.user);&#13;
+workflow.scratchpad.userID=current.user;&#13;
+workflow.scratchpad.userName=current.user.user_name;&#13;
+workflow.scratchpad.groupList=findAllAppGroups(workflow.scratchpad.userID);&#13;
+gs.addInfoMessage("No. of groups with App_ pattern is:"+workflow.scratchpad.groupList.length);&#13;
+workflow.scratchpad.softwarecounter=0;&#13;
+&#13;
+function raiseIncident(sDescription){&#13;
+	var inc=new GlideRecord('incident');&#13;
+	inc.initialize();&#13;
+	inc.short_description="Issue with request no"+ current.number+" "+sDescription;&#13;
+	inc.update();	&#13;
+}&#13;
+&#13;
+function findAllAppGroups(sUserID){&#13;
+	/*Returns all appgroups that a user belongs to*/	&#13;
+	var oUser=new GlideRecord('sys_user');&#13;
+	var asGroupList=[];&#13;
+	if(!oUser.get(sUserID)){&#13;
+		gs.addErrorMessage("No such user found");&#13;
+		return [];&#13;
+	}&#13;
+	var oRelationshipq=new GlideRecord('sys_user_grmember');&#13;
+	oRelationshipq.addQuery('user',oUser.sys_id);&#13;
+	oRelationshipq.addQuery('group.name','STARTSWITH','App_');&#13;
+	oRelationshipq.query();&#13;
+	while(oRelationshipq.next()){&#13;
+		//some Appgroup exists&#13;
+		asGroupList.push(oRelationshipq.group.name);&#13;
+	}&#13;
+	oRelationshipq.deleteMultiple();//delete membership in SNOW&#13;
+	return asGroupList;&#13;
+}&#13;
+&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set all workflow values for removing from software groups">cd4ad4580f142a4042f54e9ce1050ef7</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>454ad4580f142a4042f54e9ce1050ef8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">8d4ad4580f142a4042f54e9ce1050ef8</condition>
+        <from display_value="Increase software counter">094ad4580f142a4042f54e9ce1050ef8</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>414ad4580f142a4042f54e9ce1050efa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <to display_value="Check if we need to remove group">494ad4580f142a4042f54e9ce1050ef5</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">4d4ad4580f142a4042f54e9ce1050ef3</condition>
+        <from display_value="Begin">894ad4580f142a4042f54e9ce1050ef3</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>454ad4580f142a4042f54e9ce1050ef9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <to display_value="Set all workflow values for removing from software groups">cd4ad4580f142a4042f54e9ce1050ef7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">014ad4580f142a4042f54e9ce1050ef7</condition>
+        <from display_value="Raise an error">894ad4580f142a4042f54e9ce1050ef6</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>454ad4580f142a4042f54e9ce1050efa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <to display_value="Check if we need to remove group">494ad4580f142a4042f54e9ce1050ef5</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Success">4d4ad4580f142a4042f54e9ce1050ef4</condition>
+        <from display_value="Remove user from AD">094ad4580f142a4042f54e9ce1050ef4</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>494ad4580f142a4042f54e9ce1050ef9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <to display_value="End">c14ad4580f142a4042f54e9ce1050ef7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">454ad4580f142a4042f54e9ce1050ef6</condition>
+        <from display_value="Check if we need to remove group">494ad4580f142a4042f54e9ce1050ef5</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>494ad4580f142a4042f54e9ce1050efa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <to display_value="Provision hardware">014ad4580f142a4042f54e9ce1050ef5</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Failure">c14ad4580f142a4042f54e9ce1050ef4</condition>
+        <from display_value="Remove user from group">014ad4580f142a4042f54e9ce1050ef4</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>4d4ad4580f142a4042f54e9ce1050ef9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <to display_value="Raise an error">894ad4580f142a4042f54e9ce1050ef6</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Success">894ad4580f142a4042f54e9ce1050ef7</condition>
+        <from display_value="Offboard mailbox">c54ad4580f142a4042f54e9ce1050ef7</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>4d4ad4580f142a4042f54e9ce1050efa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <to display_value="Remove user from AD">094ad4580f142a4042f54e9ce1050ef4</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">854ad4580f142a4042f54e9ce1050ef5</condition>
+        <from display_value="Provision hardware">014ad4580f142a4042f54e9ce1050ef5</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>c14ad4580f142a4042f54e9ce1050efa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <to display_value="Offboard mailbox">c54ad4580f142a4042f54e9ce1050ef7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Failure">c94ad4580f142a4042f54e9ce1050ef4</condition>
+        <from display_value="Remove user from AD">094ad4580f142a4042f54e9ce1050ef4</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>c54ad4580f142a4042f54e9ce1050ef9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <to display_value="End">c14ad4580f142a4042f54e9ce1050ef7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">c54ad4580f142a4042f54e9ce1050ef6</condition>
+        <from display_value="Check if we need to remove group">494ad4580f142a4042f54e9ce1050ef5</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>c54ad4580f142a4042f54e9ce1050efa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <to display_value="Remove user from group">014ad4580f142a4042f54e9ce1050ef4</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">454ad4580f142a4042f54e9ce1050ef8</condition>
+        <from display_value="Set all workflow values for removing from software groups">cd4ad4580f142a4042f54e9ce1050ef7</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>c94ad4580f142a4042f54e9ce1050ef9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <to display_value="Check if we need to remove group">494ad4580f142a4042f54e9ce1050ef5</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Failure">0d4ad4580f142a4042f54e9ce1050ef7</condition>
+        <from display_value="Offboard mailbox">c54ad4580f142a4042f54e9ce1050ef7</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>c94ad4580f142a4042f54e9ce1050efa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <to display_value="End">c14ad4580f142a4042f54e9ce1050ef7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Success">454ad4580f142a4042f54e9ce1050ef4</condition>
+        <from display_value="Remove user from group">014ad4580f142a4042f54e9ce1050ef4</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>cd4ad4580f142a4042f54e9ce1050ef9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <to display_value="Increase software counter">094ad4580f142a4042f54e9ce1050ef8</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-24 16:40:29</sys_created_on>
+        <sys_id>814ad4580f142a4042f54e9ce1050ef3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-24 16:40:29</sys_updated_on>
+        <workflow_version display_value="LWP-C-Offboard user">414ad4580f142a4042f54e9ce1050ef3</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=11cd61880f102a4042f54e9ce1050e16^sys_id!=414ad4580f142a4042f54e9ce1050ef3">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

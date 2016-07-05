@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="user" label="User" language="en" table="x_19022_lwp_cdemo_software_delete_requests">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>user</element>
+            <help/>
+            <hint/>
+            <label>User</label>
+            <language>en</language>
+            <name>x_19022_lwp_cdemo_software_delete_requests</name>
+            <plural>Users</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-06-27 06:00:42</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>a694a1450f546a4042f54e9ce1050ede</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>User</sys_name>
+            <sys_package display_value="LWP-Chennai-Demo" source="x_19022_lwp_cdemo">363f64130fbb524042f54e9ce1050e73</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="LWP-Chennai-Demo">363f64130fbb524042f54e9ce1050e73</sys_scope>
+            <sys_update_name>sys_documentation_x_19022_lwp_cdemo_software_delete_requests_user_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-06-27 06:00:42</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

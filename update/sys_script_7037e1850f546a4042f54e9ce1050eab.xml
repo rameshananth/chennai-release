@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sys_user_grmember</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="sys_user_grmember">group.nameSTARTSWITHApp_^EQ<item endquery="false" field="group.name" goto="false" newquery="false" operator="STARTSWITH" or="false" value="App_"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Trigger LWP-C-AD Group removal workflow</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	/*
+	Is triggered whenever somebody tries to write an App_ group
+	Checks if the user belongs to the respective remove group. _uninstall or just App_
+	And if so writes a record to the delete request table that triggers workflow to remove
+	user from group
+	*/
+
+	var sRemoveGroupName=current.group.name;
+	var oGQuery=new GlideRecord('sys_user_grmember');
+	oGQuery.addQuery('user',current.user.sys_id);
+	if(sRemoveGroupName.indexOf('_uninstall')==-1){
+		
+		//The group is a pure install group so check if the user belongs to a uninstall group
+		sRemoveGroupName=sRemoveGroupName+"_uninstall";
+		
+	}
+	else{
+		//The group is an uninstall group, so remove from install group
+		//gs.addErrorMessage(sRemoveGroupName.substr(-10,10));
+		sRemoveGroupName=sRemoveGroupName.substr(0,									  
+												 sRemoveGroupName.indexOf('_uninstall')
+												 );	
+	}
+	oGQuery.addQuery('group.name',sRemoveGroupName);
+	oGQuery.query();
+	if(oGQuery.getRowCount()!=0){
+		oGQuery.next();
+		//user belongs to the remove group so write a record to the delete requests table
+		var oDeleteFromGroup=new GlideRecord('x_19022_lwp_cdemo_software_delete_requests');
+		oDeleteFromGroup.initialize();
+		oDeleteFromGroup.user=oGQuery.user.sys_id;
+		oDeleteFromGroup.group=oGQuery.group.sys_id;
+		oDeleteFromGroup.insert();
+		//and then delete from the remove group in SNOW
+		oGQuery.deleteMultiple();
+	}	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-27 06:15:31</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7037e1850f546a4042f54e9ce1050eab</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Trigger LWP-C-AD Group removal workflow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="LWP-Chennai-Demo" source="x_19022_lwp_cdemo">363f64130fbb524042f54e9ce1050e73</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="LWP-Chennai-Demo">363f64130fbb524042f54e9ce1050e73</sys_scope>
+        <sys_update_name>sys_script_7037e1850f546a4042f54e9ce1050eab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-07-04 16:26:13</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=7037e1850f546a4042f54e9ce1050eab"/>
+</record_update>

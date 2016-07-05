@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Request access to demo">e0c33b5d0f5c6a4042f54e9ce1050e0e</catalog_item>
+        <catalog_variable>IO:3cc33b5d0f5c6a4042f54e9ce1050e12</catalog_variable>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-28 11:04:40</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>c1c37b5d0f5c6a4042f54e9ce1050e0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>customer_bu</sys_name>
+        <sys_package display_value="LWP-Chennai-Demo" source="x_19022_lwp_cdemo">363f64130fbb524042f54e9ce1050e73</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="LWP-Chennai-Demo">363f64130fbb524042f54e9ce1050e73</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_c1c37b5d0f5c6a4042f54e9ce1050e0c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-28 11:04:40</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide company variables based on reason">c9c37b5d0f5c6a4042f54e9ce1050e08</ui_policy>
+        <variable>customer_bu</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

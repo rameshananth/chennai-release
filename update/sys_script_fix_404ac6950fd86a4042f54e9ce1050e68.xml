@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description>Create S1-S3 user criteria</description>
+        <flush_cache>false</flush_cache>
+        <name>Create S1-S3 user criteria</name>
+        <run_once>true</run_once>
+        <script><![CDATA[var saUHeaders=["First","Second","Third"];
+var sUFooter="StageDemoUsers";
+var sGHeader="ChennaiDemoUsers-S";
+
+for(var i=0;i<3;i++){
+	var sUName=saUHeaders[i]+sUFooter;
+	var oUC=new GlideRecord('user_criteria');
+	if(!oUC.get('name',sUName)){
+		var oUGroup=new GlideRecord('sys_user_group');
+		var j=i+1;
+		var sGroupName=sGHeader+j;
+		if(oUGroup.get('name',sGroupName)){
+			oUC.initialize();
+			oUC.name=sUName;
+			var lGroups=oUC.group;
+			if(lGroups!=""){
+				lGroups=(lGroups+","+oUGroup.sys_id);
+			}
+			else{
+				lGroups=oUGroup.sys_id;
+			}
+			oUC.group=lGroups;
+			oUC.insert();
+		}
+		else{
+			gs.error("First run script for setting groups");
+		}
+	}
+	else{
+		gs.error("User criteria with name "+sUName+" already exists");
+	}
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-28 03:51:14</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>404ac6950fd86a4042f54e9ce1050e68</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Create S1-S3 user criteria</sys_name>
+        <sys_package display_value="LWP-Chennai-Demo" source="x_19022_lwp_cdemo">363f64130fbb524042f54e9ce1050e73</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="LWP-Chennai-Demo">363f64130fbb524042f54e9ce1050e73</sys_scope>
+        <sys_update_name>sys_script_fix_404ac6950fd86a4042f54e9ce1050e68</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-28 05:12:36</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

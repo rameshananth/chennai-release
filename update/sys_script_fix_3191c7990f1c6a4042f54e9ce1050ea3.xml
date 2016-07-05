@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description>For all catalog items belonging to service catalog add qualifying criteria. &#13;
+Not available to FirstStage and SecondStage demo users&#13;
+Available to ThirdStage demo users</description>
+        <flush_cache>false</flush_cache>
+        <name>Add criteria to categories</name>
+        <run_once>true</run_once>
+        <script><![CDATA[//First get the sys_id of service catalog
+var saHeaders=["First","Second","Third"];
+var saUCSysIDs=[];
+var oCatalogq=new GlideRecord('sc_catalog');
+var sSCID;
+if(oCatalogq.get('title','Service Catalog')){
+	sSCID=oCatalogq.sys_id;
+}
+else{
+	gs.error("No catalog with title Service Catalog found");
+}
+
+//Now populate the sysids of the user criteria
+for(var i=0;i<3;i++){
+	//Now we pick up the first, second and third user criteria and populate the sys ids
+	var oUC=new GlideRecord('user_criteria');
+	if(oUC.get('name',saHeaders[i]+"StageDemoUsers")){
+		saUCSysIDs[i]=oUC.sys_id;
+	}
+	else{
+		gs.Error("User criteria with name: "+saHeaders[i]+"StageDemoUsers not found");
+	}
+}
+
+//Now get the user criteria of
+var oCatItem=new GlideRecord('sc_category');
+oCatItem.addQuery('sc_catalog',sSCID);
+oCatItem.query();
+while(oCatItem.next()){
+	//For each catalog item
+	gs.error("Processing "+oCatItem.title);
+	for(var j=0;j<3;j++){
+         //gs.print("Value of j is"+j);
+		//For each of the three stages
+		//var oAvailableMapping;
+		//gs.print("Processing user criteria"+saHeaders[j]);
+		if(j==2){
+			//For the third stage make it available
+			var oAvailableMappingq=new GlideRecord('sc_category_user_criteria_mtom');
+			oAvailableMappingq.addQuery('user_criteria',saUCSysIDs[j]);//check fields
+			oAvailableMappingq.addQuery('sc_category',oCatItem.sys_id);//check fields
+			oAvailableMappingq.query();
+			if(oAvailableMappingq.getRowCount()==0){//No such mapping exists
+				var oAvailableMapping=new GlideRecord('sc_category_user_criteria_mtom');
+				oAvailableMapping.initialize();
+				oAvailableMapping.user_criteria=saUCSysIDs[j];//check fields
+				oAvailableMapping.sc_category=oCatItem.sys_id;//check fields
+				oAvailableMapping.insert();//so make it
+				//gs.print("Adding ")
+			}
+		}
+		else{
+			var oAvailableMappingq=new GlideRecord('sc_category_user_criteria_no_mtom');
+			oAvailableMappingq.addQuery('user_criteria',saUCSysIDs[j]);//check fields
+			oAvailableMappingq.addQuery('sc_category',oCatItem.sys_id);//check fields
+			oAvailableMappingq.query();
+			if(oAvailableMappingq.getRowCount()==0){//No such mapping exists
+				//gs.print(")
+				//gs.print("Found no match between"+saHeaders[j]+" and "+oCatItem.getDisplayValue());
+				var oAvailableMapping=new GlideRecord('sc_category_user_criteria_no_mtom');
+				oAvailableMapping.initialize();
+				oAvailableMapping.user_criteria=saUCSysIDs[j];
+				oAvailableMapping.sc_category=oCatItem.sys_id;
+				oAvailableMapping.insert();//so make it
+			}
+		}
+	}
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-28 07:37:36</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>3191c7990f1c6a4042f54e9ce1050ea3</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Add criteria to categories</sys_name>
+        <sys_package display_value="LWP-Chennai-Demo" source="x_19022_lwp_cdemo">363f64130fbb524042f54e9ce1050e73</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="LWP-Chennai-Demo">363f64130fbb524042f54e9ce1050e73</sys_scope>
+        <sys_update_name>sys_script_fix_3191c7990f1c6a4042f54e9ce1050ea3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-28 10:08:56</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

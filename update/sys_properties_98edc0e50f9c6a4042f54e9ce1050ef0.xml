@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Name of OU in which to create user objects in AD for this lab instance</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_19022_lwp_cdemo.user_ou</name>
+        <read_roles/>
+        <suffix>user_ou</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-06-28 12:59:29</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>98edc0e50f9c6a4042f54e9ce1050ef0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_19022_lwp_cdemo.user_ou</sys_name>
+        <sys_package display_value="LWP-Chennai-Demo" source="x_19022_lwp_cdemo">363f64130fbb524042f54e9ce1050e73</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="LWP-Chennai-Demo">363f64130fbb524042f54e9ce1050e73</sys_scope>
+        <sys_update_name>sys_properties_98edc0e50f9c6a4042f54e9ce1050ef0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-06-28 12:59:29</sys_updated_on>
+        <type>string</type>
+        <value>DEV10406</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=98edc0e50f9c6a4042f54e9ce1050ef0"/>
+</record_update>
